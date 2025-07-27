@@ -42,3 +42,16 @@ Este diretório contém a implementação em Python para o problema de agrupamen
 **Observações**
 
 Na pasta "validacao" contém um exemplos dos arquivos de entrada e saída. Para testar, crie uma pasta chamada saída e execute o script informando o caminho até ela: `validacao/entrada/base1.csv`, `validacao/saida/saida2k3.csv`. O gabarito para a respectiva saída estará na pasta gabarito, o gabarito não está ordenado.
+
+**Automação de Testes**
+Para facilitar a validação em massa, você pode usar o script executar_testes_python.sh:
+
+Dê permissão de execução ao script:
+```sh
+chmod +x validacao/executar_testes_python.sh
+```
+Execute o script:
+```sh
+.validacao/executar_testes.sh
+```
+O script rodará todos os casos de teste pré-definidos e salvará os resultados na pasta validacao/saida_python/.
